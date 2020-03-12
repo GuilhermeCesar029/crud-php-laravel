@@ -19,6 +19,10 @@ Route::get('/login',['as'=>'site.login','uses'=>'LoginController@index']);
 Route::post('/login/entrar',['as'=>'site.login.entrar','uses'=>'LoginController@entrar']);
 Route::get('/login/sair',['as'=>'site.login.sair','uses'=>'LoginController@sair']);
 
+//rota para cadastro
+Route::get('/cadastro', ['uses'=>'CadastroController@index'])->name('site.cadastro');
+Route::post('/cadastro/cadastrar', ['uses'=>'CadastroController@store'])->name('site.cadastro.cadastrar');
+
 //Criando um grupo para proteger as rotas. 
 Route::group(['middleware'=>'auth'],function(){
     //rotas dos cursos

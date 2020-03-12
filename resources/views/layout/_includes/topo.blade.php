@@ -21,6 +21,7 @@
          <li><a href="/">Home</a></li>
          @if(Auth::guest())
            <li><a href="{{route('site.login')}}">Login</a></li>
+           <li><a href="{{route('site.cadastro')}}">Cadastre-se</a></li>
          @else
            <li><a href="{{route('admin.cursos')}}">Cursos</a></li>
            <li><a href="#">{{Auth::user()->name}}</a></li>

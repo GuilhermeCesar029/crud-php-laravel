@@ -38,7 +38,7 @@ class CursoController extends Controller
         $dados['imagem'] = $dir."/".$nomeImagem;
       }
 
-      Curso::create($dados);
+      Cursor::ceate($dados);
 
       return redirect()->route('admin.cursos');
     }
