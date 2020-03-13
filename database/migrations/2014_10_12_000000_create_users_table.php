@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('sobrenome');
             $table->char('cpf', 11)->unique();
-            $table->date('date', 'm-d-Y');
+            $table->date('date', 'y-d-m');
             $table->char('phone', 11);
             $table->string('email')->unique();
             $table->string('password')->bcrypt();

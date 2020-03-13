@@ -32,7 +32,7 @@
 
                         <div class="input-field col s6">
                             <input type="text" name="date" required>
-                            <label><i class="material-icons">fingerprint</i> Data de Nascimento</label>
+                            <label><i class="material-icons">date_range</i> Data de Nascimento</label>
                         </div>
                     </div>                    
                     
