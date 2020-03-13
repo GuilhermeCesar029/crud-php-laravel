@@ -2,6 +2,8 @@
 
 @section('titulo', 'Cadastre-se')
 
+@section('subtitulo', 'Cadastro')
+
 @section('conteudo')
     <div class="container">
         <h3 class="center">Cadastre-se</h3>
@@ -10,24 +12,53 @@
                 <form class="" action="{{route('site.cadastro.cadastrar')}}" method="post">
                     {{ csrf_field() }}
 
-                    <div class="input-field">
-                        <input type="text" name="name" required>
-                        <label>Nome</label>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" name="sobrenome" required>
-                        <label>Sobrenome</label>
-                    </div>
-                    <div class="input-field">
+                    <div class="row">
+                        <div class="input-field col s6">                      
+                            <input type="text" name="name" required>
+                            <label><i class="material-icons">person</i> Nome</label>                        
+                        </div>
+
+                        <div class="input-field col s6">
+                            <input type="text" name="sobrenome" required>
+                            <label><i class="material-icons">person</i> Sobrenome</label>
+                        </div>
+                    </div>                  
+
+                    <div class="row">    
+                        <div class="input-field col s6">
+                            <input type="text" name="cpf" required>
+                            <label><i class="material-icons">fingerprint</i> CPF</label>
+                        </div> 
+
+                        <div class="input-field col s6">
+                            <input type="text" name="date" required>
+                            <label><i class="material-icons">fingerprint</i> Data de Nascimento</label>
+                        </div>
+                    </div>                    
+                    
+                    <div class="input-field  ">
+                        <input type="number" name="phone" required>
+                        <label><i class="material-icons">local_phone</i> Telefone</label>
+                    </div>                    
+                    
+                    <div class="input-field ">
                         <input type="email" name="email" required>
-                        <label>email</label>
-                    </div>       
-                    <div class="input-field">
+                        <label><i class="material-icons">email</i> email</label>
+                    </div>                    
+                           
+                    <div class="input-field ">
                         <input type="password" name="password" required>
-                        <label>Senha</label>
+                        <label> <i class="material-icons">lock</i> Senha</label>
                     </div>
 
-                    <button class="btn deep-green">cadastrar-se</button>
+                    <button class="btn deep-green">
+                        <i class="material-icons right">person_add</i> 
+                        cadastrar-se 
+                    </button>
+                    
+                    <a  class="btn deep-orange" href="{{route('site.login')}}">
+                        <i class="material-icons right">send</i> Entrar
+                    </a>
                   </form>
               </section>
         </div>

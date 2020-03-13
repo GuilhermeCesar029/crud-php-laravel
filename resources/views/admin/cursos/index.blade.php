@@ -2,6 +2,8 @@
 
 @section('titulo', 'Cursos')
 
+@section('subtitulo', 'Cursos')
+
 @section('conteudo')
     <div class="container">
         <h3 class="center">Lista de cursos</h3>

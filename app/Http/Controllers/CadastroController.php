@@ -45,12 +45,16 @@ class CadastroController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'name' => 'required',
-            'sobrenome' => 'required',
-            'email' => 'required',
-            'password' => 'required',
+            'name'      =>  'required',
+            'sobrenome' =>  'required',
+            'phone'     =>  'required',
+            'email'     =>  'required',
+            'password'  =>  'required',
         ]);
         
+        //cryptografando a senha
+        $request['password'] = bcrypt($request['password']);
+
         User::create($request->all());
         
         return redirect()->route('admin.cursos')->with('Sucesso', 'Usuario cadastrado com sucesso!');
