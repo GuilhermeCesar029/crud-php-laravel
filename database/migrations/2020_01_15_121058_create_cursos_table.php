@@ -17,7 +17,7 @@ class CreateCursosTable extends Migration
             $table->increments('id');
             $table->string('titulo');
             $table->string('descricao')->nullable();
-            $table->string('imagem');
+            $table->string('imagem')->nullable();
             $table->decimal('valor');
             $table->enum('publicado', ['sim', 'nao'])->default('nao');
             

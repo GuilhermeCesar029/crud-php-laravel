@@ -38,13 +38,14 @@ class CursoController extends Controller
         $dados['imagem'] = $dir."/".$nomeImagem;
       }
 
-      Cursor::ceate($dados);
+      Curso::create($dados);
 
       return redirect()->route('admin.cursos');
     }
 
     public function editar($id){
-                  //buscando registro pelo id. e atribuindo a variavel $registro
+                  
+      //buscando registro pelo id. e atribuindo a variavel $registro
       $registro = Curso::find($id);
       return view('admin.cursos.editar',compact('registro'));  
     }
