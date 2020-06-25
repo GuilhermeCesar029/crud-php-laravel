@@ -11,7 +11,7 @@
 <img src="imagem/adicionar.png">
 
 <p><h3>Tela para Editar Cursos </h3></p>
-<img src="imagem/editar.png">
+<img src="imagem/editarAtualizado.png">
 
 <p><h3>Tela para Listar Cursos </h3></p>
 <img src="imagem/listaDeCursos.png">
