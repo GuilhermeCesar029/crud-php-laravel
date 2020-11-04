@@ -4,6 +4,8 @@ Implemetação de um crud utilizando as seguintes tecnlogias: Laravel um framewo
 # Objetivo
 Colocar meus conhecimentos de PHP em prática.
 
+# Resultado final
+
 <p><h3>Tela de Cadastro</h3></p>
 <img src="imagem/cadastro.png">
 
