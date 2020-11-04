@@ -1,3 +1,9 @@
+# Crud(create, read, update, delete)
+Implemetação de um crud utilizando as seguintes tecnlogias: Laravel um framework PHP para o back-end, e o Materialize para o front-end.
+
+# Objetivo
+Colocar meus conhecimentos de PHP em prática.
+
 <p><h3>Tela de Cadastro</h3></p>
 <img src="imagem/cadastro.png">
 
